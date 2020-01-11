@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: testRunner.TestRun
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 132.241 sec <<< FAILURE!
+Login DataDriven validation(Login)  Time elapsed: 27.455 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Dashboard / nopCommerce administratio]n> but was:<[Your store. Logi]n>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepsDefenitions.LoginPageSteps.page_title_should_be(LoginPageSteps.java:63)
+	at ?.page title should be "Dashboard / nopCommerce administration"(file:Features/Login.feature:21)
+
+Login DataDriven validation(Login)  Time elapsed: 27.616 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Dashboard / nopCommerce administratio]n> but was:<[Your store. Logi]n>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepsDefenitions.LoginPageSteps.page_title_should_be(LoginPageSteps.java:63)
+	at ?.page title should be "Dashboard / nopCommerce administration"(file:Features/Login.feature:21)
+

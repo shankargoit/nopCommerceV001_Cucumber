@@ -1,0 +1,575 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-11T01:22:26.608Z",
+        "line": 29,
+        "name": "Login DataDriven validation",
+        "description": "",
+        "id": "login;login-datadriven-validation;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8026331000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user launch chrome browser",
+            "match": {
+              "location": "LoginPageSteps.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20053574900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user open URL \"https://admin-demo.nopcommerce.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://admin-demo.nopcommerce.com/login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginPageSteps.user_open_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 569292500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters EmailId as \"admin@yourstore.com\" and password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 61
+                }
+              ],
+              "location": "LoginPageSteps.user_enters_EmailId_as_and_password_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6389401400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click on login",
+            "match": {
+              "location": "LoginPageSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90239000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "page title should be \"Dashboard / nopCommerce administration\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard / nopCommerce administration\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.page_title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2837517700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user click on logout link",
+            "match": {
+              "location": "LoginPageSteps.user_click_on_logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50825900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "page title should be \"Your store. Login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your store. Login\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.page_title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 353304100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "close browser",
+            "match": {
+              "location": "LoginPageSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-11T01:23:05.075Z",
+        "line": 30,
+        "name": "Login DataDriven validation",
+        "description": "",
+        "id": "login;login-datadriven-validation;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5813705500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user launch chrome browser",
+            "match": {
+              "location": "LoginPageSteps.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19854469700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user open URL \"https://admin-demo.nopcommerce.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://admin-demo.nopcommerce.com/login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginPageSteps.user_open_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 446741300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters EmailId as \"admin@123\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@123\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 51
+                }
+              ],
+              "location": "LoginPageSteps.user_enters_EmailId_as_and_password_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1287683900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click on login",
+            "match": {
+              "location": "LoginPageSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Dashboard / nopCommerce administratio]n\u003e but was:\u003c[Your store. Logi]n\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepsDefenitions.LoginPageSteps.page_title_should_be(LoginPageSteps.java:63)\r\n\tat ✽.page title should be \"Dashboard / nopCommerce administration\"(file:Features/Login.feature:21)\r\n",
+              "duration": 36784900,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "page title should be \"Dashboard / nopCommerce administration\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard / nopCommerce administration\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.page_title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1140500,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user click on logout link",
+            "match": {
+              "location": "LoginPageSteps.user_click_on_logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1041700,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "page title should be \"Your store. Login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your store. Login\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.page_title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 927300,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "close browser",
+            "match": {
+              "location": "LoginPageSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-11T01:23:32.540Z",
+        "line": 31,
+        "name": "Login DataDriven validation",
+        "description": "",
+        "id": "login;login-datadriven-validation;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5691593400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user launch chrome browser",
+            "match": {
+              "location": "LoginPageSteps.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19969512100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user open URL \"https://admin-demo.nopcommerce.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://admin-demo.nopcommerce.com/login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginPageSteps.user_open_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 500086100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters EmailId as \"admin@sapp\" and password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@sapp\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 52
+                }
+              ],
+              "location": "LoginPageSteps.user_enters_EmailId_as_and_password_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1348639400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click on login",
+            "match": {
+              "location": "LoginPageSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Dashboard / nopCommerce administratio]n\u003e but was:\u003c[Your store. Logi]n\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepsDefenitions.LoginPageSteps.page_title_should_be(LoginPageSteps.java:63)\r\n\tat ✽.page title should be \"Dashboard / nopCommerce administration\"(file:Features/Login.feature:21)\r\n",
+              "duration": 52688900,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "page title should be \"Dashboard / nopCommerce administration\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard / nopCommerce administration\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.page_title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 931600,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user click on logout link",
+            "match": {
+              "location": "LoginPageSteps.user_click_on_logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1023000,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "page title should be \"Your store. Login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your store. Login\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.page_title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1044900,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "close browser",
+            "match": {
+              "location": "LoginPageSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-11T01:24:00.138Z",
+        "line": 32,
+        "name": "Login DataDriven validation",
+        "description": "",
+        "id": "login;login-datadriven-validation;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5798225000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user launch chrome browser",
+            "match": {
+              "location": "LoginPageSteps.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20770552000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user open URL \"https://admin-demo.nopcommerce.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://admin-demo.nopcommerce.com/login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginPageSteps.user_open_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 504190200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters EmailId as \"admin@yourstore.com\" and password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 61
+                }
+              ],
+              "location": "LoginPageSteps.user_enters_EmailId_as_and_password_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7521644900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click on login",
+            "match": {
+              "location": "LoginPageSteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153198900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "page title should be \"Dashboard / nopCommerce administration\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard / nopCommerce administration\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.page_title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2508901600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user click on logout link",
+            "match": {
+              "location": "LoginPageSteps.user_click_on_logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37254100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "page title should be \"Your store. Login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your store. Login\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.page_title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 235670900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "close browser",
+            "match": {
+              "location": "LoginPageSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:Features/Login.feature",
+    "tags": []
+  }
+]

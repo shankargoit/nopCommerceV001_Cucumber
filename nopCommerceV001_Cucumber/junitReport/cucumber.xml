@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="131.045812">
+<testcase classname="Login" name="Login DataDriven validation" time="38.458191">
+<system-out><![CDATA[Given user launch chrome browser............................................passed
+When user open URL "https://admin-demo.nopcommerce.com/login"...............passed
+And user enters EmailId as "admin@yourstore.com" and password as "admin"....passed
+And click on login..........................................................passed
+Then page title should be "Dashboard / nopCommerce administration"..........passed
+When user click on logout link..............................................passed
+Then page title should be "Your store. Login"...............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login DataDriven validation 2" time="27.455038">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[Dashboard / nopCommerce administratio]n&gt; but was:&lt;[Your store. Logi]n&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at stepsDefenitions.LoginPageSteps.page_title_should_be(LoginPageSteps.java:63)&#13;&#10;&#9;at ✽.page title should be &quot;Dashboard / nopCommerce administration&quot;(file:Features/Login.feature:21)&#13;&#10;"><![CDATA[Given user launch chrome browser............................................passed
+When user open URL "https://admin-demo.nopcommerce.com/login"...............passed
+And user enters EmailId as "admin@123" and password as "admin123"...........passed
+And click on login..........................................................passed
+Then page title should be "Dashboard / nopCommerce administration"..........failed
+When user click on logout link..............................................skipped
+Then page title should be "Your store. Login"...............................skipped
+And close browser...........................................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Dashboard / nopCommerce administratio]n> but was:<[Your store. Logi]n>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepsDefenitions.LoginPageSteps.page_title_should_be(LoginPageSteps.java:63)
+	at ✽.page title should be "Dashboard / nopCommerce administration"(file:Features/Login.feature:21)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login DataDriven validation 3" time="27.595412">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[Dashboard / nopCommerce administratio]n&gt; but was:&lt;[Your store. Logi]n&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at stepsDefenitions.LoginPageSteps.page_title_should_be(LoginPageSteps.java:63)&#13;&#10;&#9;at ✽.page title should be &quot;Dashboard / nopCommerce administration&quot;(file:Features/Login.feature:21)&#13;&#10;"><![CDATA[Given user launch chrome browser............................................passed
+When user open URL "https://admin-demo.nopcommerce.com/login"...............passed
+And user enters EmailId as "admin@sapp" and password as "admin".............passed
+And click on login..........................................................passed
+Then page title should be "Dashboard / nopCommerce administration"..........failed
+When user click on logout link..............................................skipped
+Then page title should be "Your store. Login"...............................skipped
+And close browser...........................................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Dashboard / nopCommerce administratio]n> but was:<[Your store. Logi]n>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepsDefenitions.LoginPageSteps.page_title_should_be(LoginPageSteps.java:63)
+	at ✽.page title should be "Dashboard / nopCommerce administration"(file:Features/Login.feature:21)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login DataDriven validation 4" time="37.537171">
+<system-out><![CDATA[Given user launch chrome browser............................................passed
+When user open URL "https://admin-demo.nopcommerce.com/login"...............passed
+And user enters EmailId as "admin@yourstore.com" and password as "admin"....passed
+And click on login..........................................................passed
+Then page title should be "Dashboard / nopCommerce administration"..........passed
+When user click on logout link..............................................passed
+Then page title should be "Your store. Login"...............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
